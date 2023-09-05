@@ -1,0 +1,30 @@
+GET http://localhost:3000/players/ 
+
+###
+GET http://localhost:3000/players/15
+
+###
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Uzamaki",
+  "jerseyNumber": 23,
+  "role": "Batsman"
+}
+###
+
+
+PUT http://localhost:3000/players/15/
+Content-Type: application/json
+
+{  
+  "playerName": "Uzamaki Variant 1",
+  "jerseyNumber": 55,
+  "role": "BCCI"
+}
+
+###
+
+DELETE http://localhost:3000/players/1
