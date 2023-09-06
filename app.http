@@ -1,0 +1,30 @@
+GET http://localhost:3000/players/ 
+
+###
+GET http://localhost:3000/players/18
+
+###
+
+POST http://localhost:3000/players/
+Content-Type: application/json
+
+{
+  "playerName": "Harshad Mehta",
+  "jerseyNumber": 18,
+  "role": "Broker"
+}
+###
+
+
+PUT http://localhost:3000/players/18/
+Content-Type: application/json
+
+{  
+  "playerName": "Harshad Mehta",
+  "jerseyNumber": 23,
+  "role": "All Rounder"
+}
+
+###
+
+DELETE http://localhost:3000/players/18
